@@ -5,7 +5,8 @@
             "sources": [
                 "src/addon.cc",
                 "src/hello.cc",
-                "src/adder.cc"
+                "src/adder.cc",
+                "src/runcallback.cc"
             ],
             "include_dirs" : [
                 "<!(node -e \"require('nan')\")"

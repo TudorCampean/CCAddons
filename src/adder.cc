@@ -1,4 +1,4 @@
-// add.cc
+// adder.cc
 #include <node.h>
 #include <nan.h>
 
