@@ -1,0 +1,19 @@
+{
+  "name": "CCAddons",
+  "version": "0.0.1",
+  "description": "Examples using NAN and new Node v0.11.13 C addons",
+  "main": "src/addon.cc",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony"
+  },
+  "author": "TudorCampean",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "coffee-script": "^1.7.1",
+    "mocha": "^1.18.2"
+  }
+}
