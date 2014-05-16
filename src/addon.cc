@@ -4,6 +4,8 @@
 #include "./hello.h"
 #include "./adder.h"
 #include "./runcallback.h"
+#include "./objectfactory.h"
+#include "./functionfactory.h"
 
 using namespace v8;
 
@@ -14,6 +16,10 @@ void initAll(Handle<Object> exports) {
     NanNew<FunctionTemplate>(Adder)->GetFunction());
   exports->Set(NanSymbol("runcallback"),
     NanNew<FunctionTemplate>(RunCallback)->GetFunction());
+  exports->Set(NanSymbol("objectCreate"),
+    NanNew<FunctionTemplate>(CreateObject)->GetFunction());
+  exports->Set(NanSymbol("functionCreate"),
+    NanNew<FunctionTemplate>(CreateFunction)->GetFunction());
 }
 
 NODE_MODULE(addon, initAll);
