@@ -9,7 +9,7 @@
   "author": "TudorCampean",
   "license": "MIT",
   "dependencies": {
-    "nan": "^1.0.0"
+    "nan": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
