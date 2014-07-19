@@ -9,7 +9,7 @@ NAN_METHOD(CreateObject) {
 
   Local<Object> obj = NanNew<Object>();
 
-  obj->Set(NanSymbol("msg"), args[0]->ToString());
+  obj->Set(NanNew<String>("msg"), args[0]->ToString());
 
   NanReturnValue(obj);
 }

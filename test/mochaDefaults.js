@@ -1,7 +1,8 @@
 var chai = require('chai');
 
-expect = chai.expect;
-assert = chai.assert;
-should = chai.should();
+global.expect = chai.expect;
+global.assert = chai.assert;
+global.should = chai.should();
 
-addon = require('../build/Release/addon.node');
+global.addon = require('../build/Release/addon.node');
+global.addonObject = require('../build/Release/addonWrappedObject.node');

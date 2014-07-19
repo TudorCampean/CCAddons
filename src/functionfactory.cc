@@ -15,7 +15,7 @@ NAN_METHOD(CreateFunction) {
   Local<FunctionTemplate> ftmpl = NanNew<FunctionTemplate>(NewFunction);
   Local<Function> fn = ftmpl->GetFunction();
 
-  fn->SetName(NanSymbol("NewFunction"));
+  fn->SetName(NanNew<String>("NewFunction"));
 
   NanReturnValue(fn);
 }

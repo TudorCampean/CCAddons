@@ -1,11 +1,11 @@
-describe 'Addon add 2 numbers test', () ->
+describe 'Addon addObj 2 numbers test', () ->
 
   describe 'Add should work', () ->
     it 'should throw on invalid number of arguments', () ->
       expect(addon.add.bind(addon, 1)).to.throw('Wrong number of arguments')
       expect(addon.add.bind(addon, 1, 2, 3)).to.throw('Wrong number of arguments')
 
-    it 'should throw on type of arguments', () ->
+    it 'should throw on invalid type of arguments', () ->
       expect(addon.add.bind(addon, 1, "test")).to.throw("Wrong type of arguments. Numbers required")
 
     it 'and it should add 2 numbers', () ->
