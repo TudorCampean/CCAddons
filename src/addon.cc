@@ -8,7 +8,7 @@
 #include "./objectfactory.h"
 #include "./functionfactory.h"
 #include "./myobjectfactory.h"
-#include "./adderObjects.h"
+#include "./adderobjects.h"
 
 using namespace v8;
 
